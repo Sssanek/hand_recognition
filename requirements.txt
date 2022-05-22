@@ -1,0 +1,8 @@
+numpy~=1.20.3
+opencv-contrib-python
+mediapipe~=0.8.10
+pandas
+tensorflow~=2.9.0
+tk
+Pillow~=8.2.0
+opencv-python~=4.5.5.64
