@@ -12,8 +12,6 @@ import numpy as np
 import mediapipe as mp
 
 from utils import CvFpsCalc
-from model import KeyPointClassifier
-from model import PointHistoryClassifier
 
 import tkinter as tk
 from PIL import Image, ImageTk
@@ -93,25 +91,6 @@ class Test:
             min_detection_confidence=self.min_detection_confidence,
             min_tracking_confidence=self.min_tracking_confidence,
         )
-
-        self.keypoint_classifier = KeyPointClassifier()
-
-        self.point_history_classifier = PointHistoryClassifier()
-
-        # Прочитаем метки ############################################
-        with open('model/keypoint_classifier/keypoint_classifier_label.csv',
-                  encoding='utf-8-sig') as f:
-            keypoint_classifier_labels = csv.reader(f)
-            self.keypoint_classifier_labels = [
-                row[0] for row in keypoint_classifier_labels
-            ]
-        with open(
-                'model/point_history_classifier/point_history_classifier_label.csv',
-                encoding='utf-8-sig') as f:
-            point_history_classifier_labels = csv.reader(f)
-            self.point_history_classifier_labels = [
-                row[0] for row in point_history_classifier_labels
-            ]
 
         # FPS ############################################
         self.cvFpsCalc = CvFpsCalc(buffer_len=10)
@@ -218,6 +197,7 @@ class Test:
         ret, image = self.cap.read()
         if not ret:
             self.destructor()
+            return
         image = cv.flip(image, 1)  # Отзеркалить
         debug_image = copy.deepcopy(image)
 
@@ -252,41 +232,15 @@ class Test:
                 log_flag = self.logging_csv(pre_processed_landmark_list,
                                             pre_processed_point_history_list)
 
-                # Классификация жестов и вывод метки
-                hand_sign_id = self.keypoint_classifier(
-                    pre_processed_landmark_list)
-                if hand_sign_id == 2:  # если указывающий палец
-                    # добавим в хранилище пути координаты указательного пальца
-                    self.point_history.append(landmark_list[8])
-                else:
-                    self.point_history.append([0, 0])
 
-                # Классификация жестов пальцев
-                finger_gesture_id = 0
-                point_history_len = len(pre_processed_point_history_list)
-                # если у нас заполнено хранилище жестов
-                # то мы определяем, что значит путь
-                if point_history_len == (self.history_length * 2):
-                    finger_gesture_id = self.point_history_classifier(
-                        pre_processed_point_history_list)
 
-                # Вычисляет ID самого частого жеста в последних обнаружениях
-                self.finger_gesture_history.append(finger_gesture_id)
-                most_common_fg_id = Counter(
-                    self.finger_gesture_history).most_common()
+
+
 
                 # Нарисуем рамки и текст
                 debug_image = self.draw_bounding_rect(debug_image,
                                                       brect)
                 debug_image = self.draw_landmarks(debug_image, landmark_list)
-                debug_image = self.draw_info_text(
-                    debug_image,
-                    brect,
-                    handedness,
-                    self.keypoint_classifier_labels[hand_sign_id],
-                    self.point_history_classifier_labels[
-                        most_common_fg_id[0][0]],
-                )
         else:
             # иначе добавим, что никакого пути не было
             self.point_history.append([0, 0])
@@ -729,5 +683,9 @@ class Test:
 
 def main():
     sex = Test()
-    sex.root.bind('<Key>', sex.keypress)
-    sex.root.mainloop()
+    try:
+        sex.root.bind('<Key>', sex.keypress)
+        sex.root.mainloop()
+    except Exception as e:
+        print("[INFO] error...")
+        return
