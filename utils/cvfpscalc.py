@@ -12,7 +12,6 @@ class CvFpsCalc(object):
         current_tick = cv.getTickCount()
         different_time = (current_tick - self._start_tick) * self._freq
         self._start_tick = current_tick
-
         self._difftimes.append(different_time)
 
         fps = 1000.0 / (sum(self._difftimes) / len(self._difftimes))

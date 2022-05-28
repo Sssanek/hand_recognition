@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5949ea6d-122b-4a24-a0bf-46b072716806" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keypoint_classification.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keypoint_classification_EN.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keypoint_classifier/keypoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keypoint_classifier/keypoint_classifier.hdf5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keypoint_classifier/keypoint_classifier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keypoint_classifier/keypoint_classifier.tflite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keypoint_classifier/keypoint_classifier_label.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/keypoint_classifier/read_keypoint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/point_history_classifier/point_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/point_history_classifier/point_history_classifier.hdf5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/point_history_classifier/point_history_classifier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/point_history_classifier/point_history_classifier.tflite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/point_history_classifier/point_history_classifier_label.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/point_history_classifier/read_history.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/point_history_classification.ipynb" beforeDir="false" />
-    </list>
+    <list default="true" id="a686ec55-a9c8-44b3-9d49-730072e10a36" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="29WwTvCjAsitoGGUv5jpvEawtIC" />
+  <component name="ProjectId" id="29OonM8uOhN1i3jMmYq1CtqVFp6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,11 +26,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hand-gesture-recognition-mediapipe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.run (1)">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hand_recognition" />
+      <module name="hand-gesture-recognition-mediapipe" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -62,16 +50,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hand_recognition" />
+    <configuration name="read_history (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hand-gesture-recognition-mediapipe" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\aalap\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model/point_history_classifier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/point_history_classifier/read_history.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_keypoint (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hand-gesture-recognition-mediapipe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model/keypoint_classifier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/keypoint_classifier/read_keypoint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hand-gesture-recognition-mediapipe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Karmanov_V" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Karmanov_V/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hand-gesture-recognition-mediapipe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
@@ -85,7 +136,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run (1)" />
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.read_keypoint (1)" />
+        <item itemvalue="Python.read_history (1)" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -93,11 +147,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5949ea6d-122b-4a24-a0bf-46b072716806" name="Default Changelist" comment="" />
-      <created>1653242161433</created>
+      <changelist id="a686ec55-a9c8-44b3-9d49-730072e10a36" name="Default Changelist" comment="" />
+      <created>1652993659141</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1653242161433</updated>
+      <updated>1652993659141</updated>
     </task>
     <servers />
   </component>
