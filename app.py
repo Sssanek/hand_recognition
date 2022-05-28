@@ -131,38 +131,39 @@ class Test:
         self.root.configure(background='#ADD8E6')
         self.root.title("Распознавание жестов рук")
         self.root.protocol('WM_DELETE_WINDOW', self.destructor)
-        self.font = "Arial 28"
+        # self.root.geometry("500x500")
+        self.font = "Arial 18"
         self.panel = tk.Label(self.root)
-        self.panel.pack(padx=10, pady=10)
+        self.panel.pack(padx=1, pady=1)
         self.lb_info = tk.Label(self.root,
                                 text='Русская метка1',
-                                font="Arial 34")
-        self.lb_info.pack(padx=10, pady=10)
+                                font="Arial 24")
+        self.lb_info.pack(padx=1, pady=1)
         self.lb_info_path = tk.Label(self.root,
                                      text='Русская метка2',
-                                     font="Arial 34")
-        self.lb_info_path.pack(padx=10, pady=10)
+                                     font="Arial 24")
+        self.lb_info_path.pack(padx=1, pady=1)
         btn = tk.Button(self.root,
                         text="Смена цветовой палитры",
                         font=self.font,
                         command=self.switch_color)
-        btn.pack(fill="both", expand=True, padx=10, pady=10)
+        btn.pack(fill="both", expand=True, padx=1, pady=1)
 
         btn_n = tk.Button(self.root,
                           text="Режим без записи",
                           font=self.font,
                           command=self.n_mode)
-        btn_n.pack(fill="both", expand=True, padx=10, pady=10)
+        btn_n.pack(fill="both", expand=True, padx=1, pady=1)
         btn_k = tk.Button(self.root,
                           text="Режим записи жеста",
                           font=self.font,
                           command=self.k_mode)
-        btn_k.pack(fill="both", expand=True, padx=10, pady=10)
+        btn_k.pack(fill="both", expand=True, padx=1, pady=1)
         btn_h = tk.Button(self.root,
                           text="Режим записи следа",
                           font=self.font,
                           command=self.h_mode)
-        btn_h.pack(fill="both", expand=True, padx=10, pady=10)
+        btn_h.pack(fill="both", expand=True, padx=1, pady=1)
         self.app_status = True
         # войдем в цикл запуска функции
         self.pic_update()
