@@ -5,4 +5,4 @@ pandas
 tensorflow
 tk
 Pillow
-opencv-python~
+opencv-python
